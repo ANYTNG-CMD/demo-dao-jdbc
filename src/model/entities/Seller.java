@@ -25,7 +25,7 @@ public class Seller implements Serializable {
 		
 		this.id = id;
 		this.name = name;
-		this.email = email;
+		this.email = email; 
 		this.birthDate = birthDate;
 		this.baseSalary = baseSalary;
 		this.department = department;

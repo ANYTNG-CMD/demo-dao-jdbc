@@ -3,6 +3,8 @@ package db;
 import java.io.FileInputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.io.IOException;
 import java.util.Properties;
@@ -49,5 +51,13 @@ public class DB {
 			throw new DbException(e.getMessage());
 			
 		}
+	}
+	public static void closeStatement(PreparedStatement st) {
+		// TODO Auto-generated method stub
+		
+	}
+	public static void closeResultSet(ResultSet rs) {
+		// TODO Auto-generated method stub
+		
 	}
 }
