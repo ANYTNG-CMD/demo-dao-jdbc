@@ -13,8 +13,9 @@ public class Program {
 		//@SuppressWarnings("unused")//
 		
 		//Seller seller = new Seller(21,"Bob", "bob@,gmail.com", new Date(), 3000.0, obj);//
-		System.out.println("Conexão válida? " + (conn != null && !conn.isClosed()));
+		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
+		System.out.println("=== TEST : seller findBYId ===");
 		Seller seller = sellerDao.findById(3);
 		System.out.println(seller);
 	
